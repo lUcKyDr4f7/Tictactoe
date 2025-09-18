@@ -1,0 +1,10 @@
+.score{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.scorevictory{
+    font-size: 1.5em;
+}
