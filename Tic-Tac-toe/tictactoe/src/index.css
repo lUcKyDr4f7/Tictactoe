@@ -65,20 +65,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-  .title{
-    color: #213547;
-  }
-  .cell {
-    border: 2px solid #213547;
-  }
-  .cell i {
-    font-size: 4.75rem; 
-    color: #213547;
-    -webkit-text-stroke: 4px #213547;
-  }
-  .circle .cell:not(.x):not(.circle):hover i,
-  .x .cell:not(.x):not(.circle):hover i {
-    color: transparent; 
-    -webkit-text-stroke: 5px 	rgba(33, 53, 71, 0.3); 
-  }
 }
