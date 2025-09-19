@@ -19,7 +19,24 @@ body {
   align-items: center;
   grid-template-columns: repeat(3, auto);
 }
-
+@media (prefers-color-scheme: light) {
+  .title{
+    color: #213547;
+  }
+  .cell {
+    border: 2px solid #213547;
+  }
+  .cell i {
+    font-size: 4.75rem; 
+    color: #213547;
+    -webkit-text-stroke: 4px #213547;
+  }
+  .circle .cell:not(.x):not(.circle):hover i,
+  .x .cell:not(.x):not(.circle):hover i {
+    color: transparent; 
+    -webkit-text-stroke: 5px 	rgba(33, 53, 71, 0.3); 
+  }
+}
 /* Título */
 .title {
   color: white;
@@ -118,4 +135,5 @@ body {
 .show-result-message {
   display: flex;
 }
+
 
