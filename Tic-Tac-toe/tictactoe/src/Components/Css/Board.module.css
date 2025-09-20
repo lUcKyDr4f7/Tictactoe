@@ -1,13 +1,17 @@
 :root {
-  --cell-border-color: white;
-  --cell-icon-color: white;
-  --cell-hover-stroke: rgba(255, 255, 255, 0.3);
+  --cell-border-color: rgba(33, 53, 71, 0.77);
+  --cell-icon-color: rgba(33, 53, 71, 0.87);
+  --cell-hover-stroke: rgba(33, 53, 71, 0.3);
+  --gradient1:rgba(190, 70, 124, 1);
+  --gradient2:rgba(255, 43, 0, 1);
 }
 @media (prefers-color-scheme: light) {
   :root {
-    --cell-border-color: rgba(33, 53, 71, 0.77);
-    --cell-icon-color: rgba(33, 53, 71, 0.87);
-    --cell-hover-stroke: rgba(33, 53, 71, 0.3);
+    --cell-border-color: white;
+    --cell-icon-color: white;
+    --cell-hover-stroke: rgba(255, 255, 255, 0.3);
+    --gradient1:rgba(65, 185, 131, 1);
+    --gradient2:rgba(0, 212, 255, 1);
   }
 }
 * {
@@ -19,7 +23,7 @@
 body {
   height: 80vh;
   width: 100%;
-  background: linear-gradient(90deg, rgba(65, 185, 131, 1) 0%, rgba(0, 212, 255, 1) 100%);
+  background: linear-gradient(90deg, var(--gradient1) 0%, var(--gradient2) 100%);
 }
 
 /* Tabuleiro */
@@ -130,6 +134,7 @@ body {
 .show-result-message {
   display: flex;
 }
+
 
 
 
